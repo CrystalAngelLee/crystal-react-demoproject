@@ -1,11 +1,11 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import Counter from '../pages/counter'
-import * as CounterActions from '../store/actions/counter.action'
+import Counter from '../pages/counter.custom'
+import * as CounterActions from '../store/actions/counter.custom.action'
 
-function mapStateToProps({ counter }) {
+function mapStateToProps(state) {
     return {
-      count: counter.count
+      count: state.custom_counter.count
     }
 }
   

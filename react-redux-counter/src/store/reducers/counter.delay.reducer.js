@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT } from '../../constants/counter.const'
+import { DELAY_INCREMENT, DELAY_DECREMENT } from '../../constants/counter.const'
 
 const initalState = {
     count: 0
@@ -6,15 +6,15 @@ const initalState = {
 
 export default function CounterReducer (state = initalState, action) {
     switch (action.type) {
-        case INCREMENT: 
+        case DELAY_INCREMENT: 
             return { 
                 ...state, 
-                count: state.count + 1 
+                count: state.count + action.payload
             }
-        case DECREMENT:
+        case DELAY_DECREMENT:
             return { 
                 ...state, 
-                count: state.count - 1
+                count: state.count - action.payload
             }
         default:
             return state
