@@ -19,4 +19,4 @@ export default function CounterReducer (state = initalState, action) {
         default:
             return state
     }
-  }
+}

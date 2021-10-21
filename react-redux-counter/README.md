@@ -2,7 +2,7 @@
 
 一、安装依赖
 
-`npm install redux react-redux`
+`npm install redux react-redux redux-thunk redux-saga redux-actions`
 
 二、原生化处理
 
