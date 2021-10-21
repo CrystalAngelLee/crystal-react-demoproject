@@ -1,7 +1,7 @@
 import Counter from './scense/counter'
 import CustomCounter from './scense/counter.custom'
 import DelayCounter from './scense/counter.delay'
-
+import CreateCouter from './scense/couter.createaction'
 
 function App() {
   return (
@@ -12,6 +12,8 @@ function App() {
       <CustomCounter/>
       <div> 延迟执行计数 </div>
       <DelayCounter/>
+      <div>CreactAction counter</div>
+      <CreateCouter/>
     </div>
   );
 }

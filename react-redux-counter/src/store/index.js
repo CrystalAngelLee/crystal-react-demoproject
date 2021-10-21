@@ -8,11 +8,11 @@ import reducer from './reducers'
 // export const store = createStore(reducer, applyMiddleware(logger, thunk))
 
 import createSagaMiddleware from 'redux-saga'
-import CounterDelaySaga from './sagas/counter.delay.saga'
+import rootSaga from './sagas/root.saga'
 
 const sagaMiddleware = createSagaMiddleware()
 
 export const store = createStore(reducer, applyMiddleware(sagaMiddleware));
 
 // 启动
-sagaMiddleware.run(CounterDelaySaga)
+sagaMiddleware.run(rootSaga)

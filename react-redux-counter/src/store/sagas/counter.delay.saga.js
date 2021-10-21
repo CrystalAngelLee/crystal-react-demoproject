@@ -3,7 +3,6 @@ import { delay_increment, delay_decrement } from '../actions/counter.delay.actio
 import { ASYNC_INCREMENT, ASYNC_DECREMENT } from '../../constants/counter.const'
 
 function* delay_increment_fun (action) {
-    console.log(action)
     yield delay(2000)
     yield put(delay_increment(action.payload))
 }
