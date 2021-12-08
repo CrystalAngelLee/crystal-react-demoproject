@@ -14,5 +14,6 @@ const sagaMiddleware = createSagaMiddleware()
 
 export const store = createStore(reducer, applyMiddleware(sagaMiddleware));
 
+console.log('store', store)
 // 启动
 sagaMiddleware.run(rootSaga)
